@@ -26,9 +26,31 @@
 
 #include <stdio.h>
 
-int main() {
+int main() 
+{
+    int num , num2 , ArmstrongNUM = 0  , DigitNum  ;
 
-    //--| YOUR CODE HERE
+    printf( "Enter Number: \n" ) ;
+    scanf( "%d" , &num ) ;
 
+    num = num2 ;
+    while (num2 != 0 )
+    {
+        num /10 ;
+        num2 % 10 ;
+        ArmstrongNUM += num2 * num2 * num2  ;
+    }
+   
+    if (ArmstrongNUM == num)
+    {
+        printf("Pass.") ;
+    }
+    else 
+    {
+        printf("Not Pass.") ;
+    }
+    
     return 0 ;
 }//end main function
+
+
